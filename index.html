@@ -1,0 +1,18 @@
+<html>
+  <head>
+  </head>
+
+  <body>
+      <p><video id="video" autoplay="autoplay"></video></p>
+      <p><input type="button" id="buttonSnap" value="Take screenshot" disabled="disabled" onclick="snapshot()" /></p>
+      <p>
+      <input type="button" id="buttonStart" value="Start" disabled="disabled" onclick="start()" />
+      <input type="button" id="buttonStop" value="Stop" disabled="disabled" onclick="stop()" />
+      <input type="button" id="buttonUpload" value="Upload" onclick="upload()" />
+      </p>
+      <p><canvas id="canvas"></canvas></p>
+
+      <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.529.0/aws-sdk.js'></script>
+      <script type='text/javascript' src='./app.js'></script>  
+  </body>
+</html>
